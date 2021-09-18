@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import WindiCSS from 'vite-plugin-windicss'
-import { sharedConfig } from './vite.config'
-import { r, isDev } from './scripts/utils'
-import windiConfig from './windi.config'
+import { defineConfig } from "vite";
+import WindiCSS from "vite-plugin-windicss";
+import { sharedConfig } from "./vite.config";
+import { r, isDev } from "./scripts/utils";
+import windiConfig from "./windi.config";
 
 // bundling the content script using Vite
 export default defineConfig({
@@ -10,23 +10,20 @@ export default defineConfig({
   build: {
     watch: isDev
       ? {
-        include: [
-          r('src/contentScripts/**/*'),
-          r('src/components/**/*'),
-        ],
-      }
+          include: [r("src/contentScripts/**/*"), r("src/components/**/*")],
+        }
       : undefined,
-    outDir: r('extension/dist/contentScripts'),
+    outDir: r("extension/dist/contentScripts"),
     cssCodeSplit: false,
     emptyOutDir: false,
-    sourcemap: isDev ? 'inline' : false,
+    sourcemap: isDev ? "inline" : false,
     lib: {
-      entry: r('src/contentScripts/index.ts'),
-      formats: ['es'],
+      entry: r("src/contentScripts/index.tsx"),
+      formats: ["es"],
     },
     rollupOptions: {
       output: {
-        entryFileNames: 'index.global.js',
+        entryFileNames: "index.global.js",
       },
     },
   },
@@ -42,4 +39,4 @@ export default defineConfig({
       },
     }),
   ],
-})
+});

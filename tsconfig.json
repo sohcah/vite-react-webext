@@ -14,11 +14,13 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      "vite/client"
+      "vite/client",
+      "unplugin-icons/types/react"
     ],
     "paths": {
       "~/*": ["src/*"]
-    }
+    },
+    "jsx": "react"
   },
   "exclude": ["dist", "node_modules"]
 }

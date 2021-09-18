@@ -1,3 +1,5 @@
-import { useLocalStorage } from '@vueuse/core'
+import { useLocalStorage } from "react-use-storage";
 
-export const storageDemo = useLocalStorage('webext-demo', 'Storage Demo', { listenToStorageChanges: true })
+export function useStorageDemo() {
+    return useLocalStorage<string>("webext-demo");
+}
