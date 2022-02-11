@@ -21,7 +21,6 @@ specifiers:
   npm-run-all: ^4.1.5
   react: ^17.0.0
   react-dom: ^17.0.0
-  react-use-storage: ^0.5.1
   rimraf: ^3.0.2
   typescript: ^4.4.3
   unplugin-auto-import: ^0.5.11
@@ -53,7 +52,6 @@ devDependencies:
   npm-run-all: 4.1.5
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  react-use-storage: 0.5.1_react-dom@17.0.2+react@17.0.2
   rimraf: 3.0.2
   typescript: 4.5.5
   unplugin-auto-import: 0.5.11_vite@2.8.1
@@ -4619,16 +4617,6 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-    dev: true
-
-  /react-use-storage/0.5.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-CUIjDuTZzJU5jpzdLuR+1uGwqQ6CnjbJYJf5eDBT5AdhHEQMSNbBAEjbN9ZculWQPiw0t5S3vyF0qoZnq7eweg==}
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
     dev: true
 
   /react/17.0.2:

@@ -1,5 +1,5 @@
-import { useLocalStorage } from "react-use-storage";
+import { useStorage } from "~/hooks/useStorage";
 
 export function useStorageDemo() {
-  return useLocalStorage<string>("webext-demo");
+  return useStorage("webext-demo", "Storage Demo");
 }
